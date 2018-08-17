@@ -1,7 +1,5 @@
 package com.algorithmjunkie.mc.konfig.core.database;
 
-import javafx.util.Pair;
-
 public final class RedisAuthAdapter implements AuthAdapter {
     private final String hostname;
     private final int port;

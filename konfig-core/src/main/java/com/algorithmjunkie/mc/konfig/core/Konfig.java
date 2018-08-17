@@ -44,6 +44,7 @@ public interface Konfig {
 
     /**
      * Gets AuthAdapter from Konfig file's root
+     *
      * @return an {@link AuthAdapter} or null
      */
     default AuthAdapter getAuthAdapter() {
