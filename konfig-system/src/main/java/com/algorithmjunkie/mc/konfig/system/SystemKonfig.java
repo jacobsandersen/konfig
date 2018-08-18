@@ -1,6 +1,6 @@
 package com.algorithmjunkie.mc.konfig.system;
 
-import com.algorithmjunkie.mc.konfig.system.core.BaseKonfig;
+import com.algorithmjunkie.mc.konfig.core.BaseKonfig;
 import com.google.common.base.Preconditions;
 import com.google.common.reflect.TypeToken;
 import ninja.leaping.configurate.ConfigurationNode;

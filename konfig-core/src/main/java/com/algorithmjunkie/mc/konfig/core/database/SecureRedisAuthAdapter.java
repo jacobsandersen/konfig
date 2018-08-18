@@ -1,11 +1,13 @@
-package com.algorithmjunkie.mc.konfig.system.core.database;
+package com.algorithmjunkie.mc.konfig.core.database;
 
-public final class RedisAuthAdapter implements AuthAdapter {
+public final class SecureRedisAuthAdapter implements AuthAdapter {
     private final String hostname;
+    private final String password;
     private final int port;
 
-    public RedisAuthAdapter(String hostname, int port) {
+    public SecureRedisAuthAdapter(String hostname, String password, int port) {
         this.hostname = hostname;
+        this.password = password;
         this.port = port;
     }
 
@@ -21,7 +23,7 @@ public final class RedisAuthAdapter implements AuthAdapter {
 
     @Override
     public String getPassword() {
-        return null;
+        return password;
     }
 
     @Override

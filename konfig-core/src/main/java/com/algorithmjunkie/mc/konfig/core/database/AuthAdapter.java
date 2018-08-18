@@ -1,4 +1,4 @@
-package com.algorithmjunkie.mc.konfig.system.core.database;
+package com.algorithmjunkie.mc.konfig.core.database;
 
 public interface AuthAdapter {
     String getDriverClassName();
