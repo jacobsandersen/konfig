@@ -1,4 +1,4 @@
-package com.algorithmjunkie.mc.konfig.core;
+package com.algorithmjunkie.mc.konfig.system.core;
 
 import com.google.common.base.Preconditions;
 

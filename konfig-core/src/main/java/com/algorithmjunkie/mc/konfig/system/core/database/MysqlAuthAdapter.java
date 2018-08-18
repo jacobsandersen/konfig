@@ -1,4 +1,4 @@
-package com.algorithmjunkie.mc.konfig.core.database;
+package com.algorithmjunkie.mc.konfig.system.core.database;
 
 public class MysqlAuthAdapter extends JdbcAuthAdapter {
     public MysqlAuthAdapter(String username, String password, String schema, String hostname) {

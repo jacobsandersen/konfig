@@ -1,6 +1,6 @@
-package com.algorithmjunkie.mc.konfig.bukkit;
+package com.algorithmjunkie.mc.konfig.system.bukkit;
 
-import com.algorithmjunkie.mc.konfig.core.BaseKonfig;
+import com.algorithmjunkie.mc.konfig.system.core.BaseKonfig;
 import com.google.common.base.Preconditions;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

@@ -1,9 +1,9 @@
-package com.algorithmjunkie.mc.konfig.core;
+package com.algorithmjunkie.mc.konfig.system.core;
 
-import com.algorithmjunkie.mc.konfig.core.database.AuthAdapter;
-import com.algorithmjunkie.mc.konfig.core.database.MysqlAuthAdapter;
-import com.algorithmjunkie.mc.konfig.core.database.RedisAuthAdapter;
-import com.algorithmjunkie.mc.konfig.core.database.SecureRedisAuthAdapter;
+import com.algorithmjunkie.mc.konfig.system.core.database.AuthAdapter;
+import com.algorithmjunkie.mc.konfig.system.core.database.MysqlAuthAdapter;
+import com.algorithmjunkie.mc.konfig.system.core.database.RedisAuthAdapter;
+import com.algorithmjunkie.mc.konfig.system.core.database.SecureRedisAuthAdapter;
 
 import java.io.File;
 import java.util.List;

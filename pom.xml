@@ -12,6 +12,7 @@
         <module>konfig-bukkit</module>
         <module>konfig-bungee</module>
         <module>konfig-core</module>
+        <module>konfig-system</module>
     </modules>
 
     <properties>

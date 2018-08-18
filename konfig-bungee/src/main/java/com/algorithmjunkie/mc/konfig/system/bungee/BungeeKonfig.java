@@ -1,6 +1,6 @@
-package com.algorithmjunkie.mc.konfig.bungee;
+package com.algorithmjunkie.mc.konfig.system.bungee;
 
-import com.algorithmjunkie.mc.konfig.core.BaseKonfig;
+import com.algorithmjunkie.mc.konfig.system.core.BaseKonfig;
 import com.google.common.base.Preconditions;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
