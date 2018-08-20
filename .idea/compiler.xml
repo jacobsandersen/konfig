@@ -9,6 +9,7 @@
         <module name="konfig-bukkit" />
         <module name="konfig-bungee" />
         <module name="konfig-core" />
+        <module name="konfig-system" />
       </profile>
     </annotationProcessing>
   </component>
