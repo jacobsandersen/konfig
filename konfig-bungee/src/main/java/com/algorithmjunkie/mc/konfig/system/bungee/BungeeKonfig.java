@@ -70,6 +70,10 @@ public class BungeeKonfig extends BaseKonfig {
         }
     }
 
+    public final Configuration getConfiguration() {
+        return configuration;
+    }
+
     @Override
     public String getString(String node) {
         return configuration.getString(node);
