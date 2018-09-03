@@ -61,6 +61,16 @@ public class BukkitKonfig extends BaseKonfig {
         return configuration.getStringList(node);
     }
 
+    @Override
+    public Boolean getBoolean(String node) {
+        return configuration.getBoolean(node);
+    }
+
+    @Override
+    public List<Boolean> getBooleanList(String node) {
+        return configuration.getBooleanList(node);
+    }
+
     public Integer getInteger(String node) {
         return configuration.getInt(node);
     }

@@ -4,6 +4,7 @@ import com.algorithmjunkie.mc.konfig.core.database.AuthAdapter;
 import com.algorithmjunkie.mc.konfig.core.database.MysqlAuthAdapter;
 import com.algorithmjunkie.mc.konfig.core.database.RedisAuthAdapter;
 import com.algorithmjunkie.mc.konfig.core.database.SecureRedisAuthAdapter;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.io.File;
 import java.util.List;
@@ -21,6 +22,10 @@ public interface Konfig {
     String getString(String node);
 
     List<String> getStringList(String node);
+
+    Boolean getBoolean(String node);
+
+    List<Boolean> getBooleanList(String node);
 
     Integer getInteger(String node);
 

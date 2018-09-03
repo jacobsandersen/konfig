@@ -97,6 +97,21 @@ public class SystemKonfig extends BaseKonfig {
     }
 
     @Override
+    public Boolean getBoolean(String node) {
+        return node(node).getBoolean();
+    }
+
+    @Override
+    public List<Boolean> getBooleanList(String node) {
+        try {
+            return node(node).getList(TypeToken.of(Boolean.class));
+        } catch (ObjectMappingException ex) {
+            ex.printStackTrace();
+            return Collections.emptyList();
+        }
+    }
+
+    @Override
     public Integer getInteger(String node) {
         return config.getNode(node).getInt();
     }

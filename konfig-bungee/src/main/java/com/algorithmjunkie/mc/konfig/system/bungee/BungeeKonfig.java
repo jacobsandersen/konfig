@@ -81,6 +81,16 @@ public class BungeeKonfig extends BaseKonfig {
     }
 
     @Override
+    public Boolean getBoolean(String node) {
+        return configuration.getBoolean(node);
+    }
+
+    @Override
+    public List<Boolean> getBooleanList(String node) {
+        return configuration.getBooleanList(node);
+    }
+
+    @Override
     public Integer getInteger(String node) {
         return configuration.getInt(node);
     }
