@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class SystemKonfig extends BaseKonfig {
+public class SystemKonfig extends BaseKonfig<ConfigurationNode> {
     private YAMLConfigurationLoader loader;
     private ConfigurationNode config;
 
@@ -79,6 +79,11 @@ public class SystemKonfig extends BaseKonfig {
             System.err.println(String.format("Failed to reload %s.", name));
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public ConfigurationNode getBackend() {
+        return config;
     }
 
     @Override

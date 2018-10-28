@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 
 import java.io.File;
 
-public abstract class BaseKonfig implements Konfig {
+public abstract class BaseKonfig<T> implements Konfig<T> {
     protected final String name;
     protected final File directory;
 

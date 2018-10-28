@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BukkitKonfig extends BaseKonfig {
+public class BukkitKonfig extends BaseKonfig<YamlConfiguration> {
     private final JavaPlugin plugin;
     private YamlConfiguration configuration;
 
@@ -51,6 +51,11 @@ public class BukkitKonfig extends BaseKonfig {
     public void reload() {
         plugin.getLogger().info(String.format("Reloading %s...", name));
         configuration = YamlConfiguration.loadConfiguration(getFile());
+    }
+
+    @Override
+    public YamlConfiguration getBackend() {
+        return configuration;
     }
 
     public String getString(String node) {

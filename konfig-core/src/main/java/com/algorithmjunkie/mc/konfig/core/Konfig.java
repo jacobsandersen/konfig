@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-public interface Konfig {
+public interface Konfig<T> {
     File getFile();
 
     void createFile();
@@ -18,6 +18,8 @@ public interface Konfig {
     void saveFile();
 
     void reload();
+
+    T getBackend();
 
     String getString(String node);
 

@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 
-public class BungeeKonfig extends BaseKonfig {
+public class BungeeKonfig extends BaseKonfig<Configuration> {
     private final Plugin plugin;
     private final ConfigurationProvider provider;
     private Configuration configuration;
@@ -70,7 +70,8 @@ public class BungeeKonfig extends BaseKonfig {
         }
     }
 
-    public final Configuration getConfiguration() {
+    @Override
+    public Configuration getBackend() {
         return configuration;
     }
 
