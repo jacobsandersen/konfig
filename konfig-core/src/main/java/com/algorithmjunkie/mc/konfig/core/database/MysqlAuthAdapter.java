@@ -1,23 +1,34 @@
 package com.algorithmjunkie.mc.konfig.core.database;
 
 public class MysqlAuthAdapter extends JdbcAuthAdapter {
-    public MysqlAuthAdapter(String username, String password, String schema, String hostname) {
-        this(username, password, schema, hostname, 3306);
+    private String type;
+
+    public MysqlAuthAdapter(String type, String username, String password, String schema, String hostname) {
+        this(type, username, password, schema, hostname, 3306);
     }
 
-    public MysqlAuthAdapter(String username, String password, String schema, String hostname, int port) {
+    public MysqlAuthAdapter(String type, String username, String password, String schema, String hostname, int port) {
         super(username, password, schema, hostname, port);
+        this.type = type;
     }
 
     @Override
     public final String getDriverClassName() {
-        return "com.mysql.jdbc.Driver";
+        switch (type) {
+            case "mysql":
+                return "com.mysql.jdbc.Driver";
+            case "mariadb":
+                return "org.mariadb.jdbc.Driver";
+        }
+
+        return "";
     }
 
     @Override
     public final String getJdbcUrl() {
         return String.format(
-                "jdbc:mysql://%s:%d/%s?autoReconnect=true&useSSL=false",
+                "jdbc:%s://%s:%d/%s?autoReconnect=true&useSSL=false",
+                type,
                 getHostName(),
                 getPort(),
                 getSchemaName()

@@ -4,7 +4,6 @@ import com.algorithmjunkie.mc.konfig.core.database.AuthAdapter;
 import com.algorithmjunkie.mc.konfig.core.database.MysqlAuthAdapter;
 import com.algorithmjunkie.mc.konfig.core.database.RedisAuthAdapter;
 import com.algorithmjunkie.mc.konfig.core.database.SecureRedisAuthAdapter;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.io.File;
 import java.util.List;
@@ -69,7 +68,9 @@ public interface Konfig<T> {
                         getInteger("port")
                 );
             case "mysql":
+            case "mariadb":
                 return new MysqlAuthAdapter(
+                        type,
                         getString("username"),
                         getString("password"),
                         getString("schema"),
