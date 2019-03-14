@@ -5,7 +5,7 @@
     <parent>
         <artifactId>konfig</artifactId>
         <groupId>com.algorithmjunkie.mc</groupId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -44,7 +44,7 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray-simpleauthority-konfig</id>
+            <id>bintray-simpleauthority</id>
             <name>simpleauthority-konfig</name>
             <url>https://api.bintray.com/maven/simpleauthority/konfig/konfig-core/;publish=1</url>
         </repository>

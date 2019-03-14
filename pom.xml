@@ -7,7 +7,7 @@
     <groupId>com.algorithmjunkie.mc</groupId>
     <artifactId>konfig</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <modules>
         <module>konfig-bukkit</module>
         <module>konfig-bungee</module>
@@ -23,7 +23,7 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray-simpleauthority-konfig</id>
+            <id>bintray-simpleauthority</id>
             <name>simpleauthority-konfig</name>
             <url>https://api.bintray.com/maven/simpleauthority/konfig/konfig/;publish=1</url>
         </repository>
